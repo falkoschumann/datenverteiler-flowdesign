@@ -1,4 +1,4 @@
-Funktionsbibliothek Flow-Design [![Build Status](https://travis-ci.org/falkoschumann/datenverteiler-flowdesign.svg?branch=develop)](https://travis-ci.org/falkoschumann/datenverteiler-flowdesign)
+Funktionsbibliothek Flow-Design [![Build Status](https://travis-ci.org/falkoschumann/datenverteiler-flowdesign.svg?branch=master)](https://travis-ci.org/falkoschumann/datenverteiler-flowdesign)
 ===============================
 
 Die Funktionsbibliothek Flow-Design passt das Flow-Design an die BSVRZ-Software
