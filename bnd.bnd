@@ -1,0 +1,6 @@
+-exportcontents: \
+    de.muspell.datenverteiler.flowdesign
+-sources: true
+
+Bundle-Name: Funktionsbibliothek Flow-Design
+Bundle-SymbolicName: de.muspellheim.datenverteiler.flowdesign

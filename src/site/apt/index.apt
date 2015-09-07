@@ -1,0 +1,26 @@
+ ------
+ Introduction
+ ------
+ Falko Schumann
+ ------
+ 2015-09-07
+ ------
+
+
+Funktionsbibliothek Flow-Design
+
+
+  Die Funktionsbibliothek Flow-Design passt das Flow-Design an die BSVRZ-Software an und bietet mit
+  <<<FlowApplikation>>> eine Alternative zur <<<StandardApplication>>>.
+
+
+* Funktionen
+
+  * <<<FlowApplikation>>> als Alternative zu <<<StandardApplication>>> zum Entwurf und für die Entwicklung mit
+    Flow-Design.
+
+
+* Verwendung
+
+  Allgemeine Hinweise zur Verwendung der Funktionsbibliothek Flow-Design finden sich auf der
+  {{{./usage.html}Seite Verwendung}}.

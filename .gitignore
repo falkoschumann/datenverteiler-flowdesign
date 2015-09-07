@@ -1,0 +1,10 @@
+# BSVRZ
+*.old
+*.lock
+
+# Build
+target/
+
+# IDE
+.idea/
+*.iml

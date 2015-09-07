@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2015 Falko Schumann
+  ~ Released under the terms of the MIT License.
+  -->
+
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+
+    <id>swe</id>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>${project.artifactId}/lib/</outputDirectory>
+            <scope>runtime</scope>
+            <useProjectArtifact>false</useProjectArtifact>
+            <excludes>
+                <exclude>de.bsvrz.*:*</exclude>
+            </excludes>
+        </dependencySet>
+        <dependencySet>
+            <outputDirectory>${project.artifactId}/lib/</outputDirectory>
+            <scope>test</scope>
+            <useProjectArtifact>false</useProjectArtifact>
+            <excludes>
+                <exclude>de.bsvrz.*:*</exclude>
+            </excludes>
+        </dependencySet>
+    </dependencySets>
+
+    <files>
+
+        <!-- Runtime Scope -->
+        <file>
+            <source>${project.basedir}/README.md</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>LIESMICH.txt</destName>
+        </file>
+        <file>
+            <source>${project.basedir}/LICENSE.txt</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}-MIT-Lizenz.txt</destName>
+        </file>
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}.jar</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}.jar</destName>
+        </file>
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}-runtime.jar</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}-runtime.jar</destName>
+        </file>
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}-javadoc.jar</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}-doc-api.zip</destName>
+        </file>
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}-sources.jar</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}-src.zip</destName>
+        </file>
+
+        <!-- Test Scope -->
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}-tests.jar</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}-test.jar</destName>
+        </file>
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}-test-javadoc.jar</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}-test-doc-api.zip</destName>
+        </file>
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}-test-sources.jar</source>
+            <outputDirectory>${project.artifactId}/</outputDirectory>
+            <destName>${project.artifactId}-test-src.zip</destName>
+        </file>
+
+    </files>
+
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/site</directory>
+            <outputDirectory>${project.artifactId}/docs</outputDirectory>
+        </fileSet>
+    </fileSets>
+
+</assembly>
