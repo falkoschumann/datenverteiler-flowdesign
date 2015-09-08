@@ -16,7 +16,7 @@
     </properties>
 
     <body>
-        <release version="1.0.0" date="2015-09-07" description="Erste Veröffentlichung">
+        <release version="1.0.0" date="2015-09-08" description="Erste Veröffentlichung">
             <action dev="falkoschumann" type="add">
         Quelltext aus Funktionsbibliothek Datenverteiler
     `datenverteiler-datenkatalog` hierher verschoben.
