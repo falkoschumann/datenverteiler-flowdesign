@@ -16,6 +16,11 @@
     </properties>
 
     <body>
+        <release version="1.0.1" date="2015-09-08" description="Platzhalter für nächste Veröffentlichung">
+            <action dev="falkoschumann" type="fix">
+        Lorem ipsum.
+            </action>
+        </release>
         <release version="1.0.0" date="2015-09-08" description="Erste Veröffentlichung">
             <action dev="falkoschumann" type="add">
         Quelltext aus Funktionsbibliothek Datenverteiler

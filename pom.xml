@@ -11,7 +11,7 @@
 
     <groupId>de.muspellheim</groupId>
     <artifactId>datenverteiler-flowdesign</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>Funktionsbibliothek Flow-Design</name>
     <description>
