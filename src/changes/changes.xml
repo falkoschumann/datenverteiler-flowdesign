@@ -16,7 +16,7 @@
     </properties>
 
     <body>
-        <release version="1.0.1" date="2015-09-09" description="Erste Veröffentlichung">
+        <release version="1.0.1" date="2015-09-09" description="Bugfix Release">
             <action dev="falkoschumann" type="fix" issue="1">
         Abhängigkeit zur Bibliothek Flowdesign ist nicht mehr optional.
             </action>
