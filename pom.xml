@@ -11,7 +11,7 @@
 
     <groupId>de.muspellheim</groupId>
     <artifactId>datenverteiler-flowdesign</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Funktionsbibliothek Flow-Design</name>
     <description>
@@ -46,7 +46,6 @@ an und bietet mit `FlowApplikation` eine Alternative zur `StandardApplication`.
             <groupId>de.muspellheim</groupId>
             <artifactId>flowdesign</artifactId>
             <version>3.0.0</version>
-            <optional>true</optional>
         </dependency>
     </dependencies>
 
